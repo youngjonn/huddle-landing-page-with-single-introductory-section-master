@@ -1,0 +1,190 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1440px;
+}
+
+.homepage {
+    background: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-inline: 4.8rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 200px;
+    margin-block: 3rem 5rem;
+}
+
+main {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+
+.image-description img {
+    width: 44.4rem;
+    display: flex;
+}
+
+
+.contents {
+    margin-top : 3.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contents .title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2.4rem;
+}
+
+.contents p {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.contents a {
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 1rem 3.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    box-shadow: 5px 5px 10px  #0007;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.contents a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social-media {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+}
+
+.social-media ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    list-style-type: none;
+}
+
+.social-media ul li {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-media ul li:hover {
+    border-color: hsl(300, 69%, 71%);
+}
+
+.social-media ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.social-media ul li a:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+    .homepage {
+        background: url(images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-inline: 2.5rem;
+        width: 100%;
+    }
+    .logo img {
+        width: 7.5rem;
+        margin-block: 2rem 5rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        gap: initial;
+    }
+    .image-description img {
+        width: 100%;
+        margin-block: -2rem 0rem;
+    }
+    .contents {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contents .title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .contents a {
+        padding: .5rem 4.5rem;
+        margin-block: 1.5rem 3rem;
+        align-self: center;
+        font-size: 1rem;
+    }
+    .social-media {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .social-media ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .social-media ul li {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-media ul li a{
+        border: none;
+        justify-self: center;
+    }
+}
